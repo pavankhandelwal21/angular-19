@@ -1,0 +1,9 @@
+<h1>Dynamic Styling</h1>
+
+<h3 
+[style.backgroundColor]="bgColor" 
+[style.fontSize.px]="mediumSize"
+>Change the Color</h3>
+
+<h1 [style.fontSize]="toggle? smallSize: largeSize" >Heading</h1>
+<button (click)="zoomFun()" class="btn">Zoom</button>

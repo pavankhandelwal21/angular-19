@@ -10,6 +10,7 @@ import { EffectComponent } from './effect/effect.component';
 import { ContextualVariableComponent } from './contextual-variable/contextual-variable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { DynamicStylingComponent } from './dynamic-styling/dynamic-styling.component';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     EffectComponent,
     ContextualVariableComponent,
     TwoWayBindingComponent,
-    TodoListComponent
+    TodoListComponent,
+    DynamicStylingComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
