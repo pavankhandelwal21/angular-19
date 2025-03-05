@@ -1,0 +1,32 @@
+.btn{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-green{
+    background-color: green;
+}
+.btn:hover{
+    border: 1px solid white;
+    opacity: 80%;
+}
+.counterValue{
+    width: 100px;
+    border-radius: 10px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: lightgray;
+}

@@ -1,0 +1,48 @@
+<h1>Signal In Angular</h1>
+
+<h2>Difference between signals and property</h2>
+
+<p>Property value: {{propertyValue}}</p>
+<button (click)="increasePropertyValue()" class="btn">Increase Property Value</button>
+
+<p>Signal value: {{count()}}</p>
+<button (click)="this.count.set(this.count() + 1)" class="btn">Increase Signal Value</button>
+<p>when you update a signal's value, Angular tracks and reacts to changes. However,
+     if you update a property inside an object stored in a signal, 
+     Angular won't detect the change unless the whole object reference is updated.</p>
+
+<hr>
+
+<h2>Writable Signals</h2>
+
+<p>Increase and Decrease the below count using signal</p>
+
+<div class="d-flex align-item-center">
+    <button (click)="updateValue('Decrease')" class="btn">Decrease Value</button>
+    <p class="wrap-value">Value: {{signalValue()}}</p>
+    <button (click)="updateValue('Increase')" class="btn">Increase Value</button>
+</div>
+
+<hr>
+
+<p>In this we will also learn about datatypes and their uses in signal</p>
+<div>
+    <p>Signal Value 1: {{newValue()}}</p>
+    <p>Signal Value 2: {{canAlsoBeWrittenAs()}}</p>
+    <p>Signal Single Data Type Value: {{singleDataType()}}</p>
+    <p>Cannot Update: {{notUpdate()}}</p>
+    <button (click)="updateToString()" class="btn">Update to String</button>
+    <button (click)="updateToBol()" class="btn">Update to Boolean</button>
+    <button (click)="newUpdateTechnique()" class="btn">Update Single Data Type</button>
+</div>
+
+<h2>Computed Signals</h2>
+
+<p>We can update them indirectly by updating the dependencies</p>
+<p>X: {{x()}}</p>
+<p>Y: {{y()}}</p>
+<p>Z: {{z()}}</p>
+
+<button (click)="increaseX()" class="btn">Increase X</button>
+<button (click)="increaseY()" class="btn">Increase Y</button>
+

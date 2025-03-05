@@ -1,0 +1,18 @@
+<h1>For Loop</h1>
+
+@for (item of names; track item) {
+    <h4>{{item}}</h4>
+}
+
+<hr>
+
+@for (value of newObjects; track value.name; let id = $index) {
+    <div>
+        <span>{{id}}</span>
+        <span>{{value.name}}</span>
+        <span>{{value.age}}</span>
+        <span>{{value.email}}</span>
+        <button (click)="getName(value.name)" class="btn">Get Name</button>
+        <span>{{value.outputName}}</span>
+    </div>
+}

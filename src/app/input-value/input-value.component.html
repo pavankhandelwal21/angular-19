@@ -1,0 +1,19 @@
+<h1>Get and Set Input Value</h1>
+<h1>Displaye Name: {{displayName}}</h1>
+<h5>Input Value: {{name}}</h5>
+<input type="text" value="{{name}}" placeholder="Enter name" (input)="getName($event)">
+<br><br>
+<button class="btn" (click)="showName()">Get Name</button>
+<button class="btn" (click)="setName()">Set Name</button>
+
+<br><br><br><br>
+<h1>Email: {{email}}</h1>
+<p>
+    If I am using # then it is known as template reference variable
+    Template variables help you use data from one part of a template in another part of the template
+</p>
+<p>I have used one way data biding in below placeholder</p>
+<input type="text" value="{{email}}" placeholder="Enter email" #emailField>
+<br><br>
+<button class="btn" (click)="getEmail(emailField.value)">Get Email</button>
+<button class="btn" (click)="setEmail()">Set Email</button>

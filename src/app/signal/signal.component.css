@@ -1,0 +1,10 @@
+.wrap-value{
+    border: 2px solid black;
+    margin: 0 5px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: chocolate;
+}
+.align-item-center{
+    align-items: center;
+}

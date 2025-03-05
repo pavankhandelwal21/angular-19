@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+.btn{
+    height: 30px;
+    width: auto;
+    margin: 5px;
+    border-radius: 10%;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+.btn:hover{
+    background: linear-gradient(to bottom right, #008cff, #e100ff) !important;
+    color: white !important;
+    opacity: 90%;
+    transition: 1s;
+    background-position: right center; 
+}
+.btn:active{
+    box-shadow: 0px 0px 5px 5px black;
+    opacity: 80%;
+}
+
+.block{
+    height: 100px;
+    width: 100px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.d-flex{
+    display: flex;
+}
+.m-0-5{
+    margin: 0.5%;
+}
