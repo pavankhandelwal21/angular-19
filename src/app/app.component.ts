@@ -9,10 +9,23 @@ import { SignalComponent } from './signal/signal.component';
 import { EffectComponent } from './effect/effect.component';
 import { ContextualVariableComponent } from './contextual-variable/contextual-variable.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, CountersComponent, InputValueComponent, IfElseControlFlowComponent, SwitchControlFlowComponent, ForLoopComponent, SignalComponent, EffectComponent, ContextualVariableComponent, TwoWayBindingComponent],
+  imports: [
+    LoginComponent,
+    CountersComponent,
+    InputValueComponent,
+    IfElseControlFlowComponent,
+    SwitchControlFlowComponent,
+    ForLoopComponent,
+    SignalComponent,
+    EffectComponent,
+    ContextualVariableComponent,
+    TwoWayBindingComponent,
+    TodoListComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
