@@ -1,0 +1,19 @@
+<h1>Contextual Variable</h1>
+<p>we have some default element in for loop they are known as contextual variables - $count, $index, $last, $first, $odd, $even</p>
+
+@for(user of users;track user){
+    <!-- @if($first || $last){
+        <h3 style="background-color: blue;">The {{$index+1}} user is {{user}}</h3>
+    }@else {
+        <h3>The {{$index+1}} user is {{user}}</h3>
+    } -->
+        @if($odd){
+            <h3 style="background-color: aquamarine;">The {{$index}} user is {{user}}</h3>
+        }
+        @if($even){
+            <h3 style="background-color: greenyellow;">The {{$index}} user is {{user}}</h3>
+        }
+}
+@empty(){
+    <h3>No element in array</h3>
+}

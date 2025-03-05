@@ -1,0 +1,9 @@
+<h1>Effect In Angular</h1>
+
+<p>Count: {{count()}}</p>
+<button (click)="this.count.set(this.count()+1)" class="btn">Increase Count</button>
+<button (click)="this.count.set(this.count()-1)" class="btn">Decrease Count</button>
+
+@if(displayElement){
+    <h1 style="background-color: blueviolet;">Displayed Element - Wait for more than 2 sec to check if its still visible</h1>
+}

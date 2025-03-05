@@ -1,0 +1,31 @@
+<h1>Switch Control Flow</h1>
+
+<section>
+    <div>
+        <div>
+            <button (click)="setBlockColor('red')" class="btn">Red</button>
+            <button (click)="setBlockColor('blue')" class="btn">Blue</button>
+            <button (click)="setBlockColor('green')" class="btn">Green</button>
+            <button (click)="setBlockColor('orange')" class="btn">Orange</button>
+            <button (click)="setBlockColor('black')" class="btn">Marble Green</button>
+            <input type="text" placeholder="Enter color name" (input)="setInputColor($event)">
+        </div>
+        @switch (color) {
+            @case ('red') {
+                <h1 class="center-alignment-text" style="background-color: red;">Red Color</h1>
+            }
+            @case ('blue') {
+                <h1 class="center-alignment-text" style="background-color: blue;">Blue Color</h1>
+            }
+            @case ('green') {
+                <h1 class="center-alignment-text" style="background-color: green;">Green Color</h1>
+            }
+            @case ('orange') {
+                <h1 class="center-alignment-text" style="background-color: orange;">Orange Color</h1>
+            }
+            @default {
+                <h1 class="center-alignment-text" style="background-color: black; color: white;">No Color Matched</h1>
+            }
+        }
+    </div>
+</section>

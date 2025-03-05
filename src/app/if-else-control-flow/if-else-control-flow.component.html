@@ -1,0 +1,85 @@
+<h1>If, Else If and Else | Control Flow</h1>
+
+<section>
+    <p>Actions on Div:</p>
+    <div class="d-flex">
+        <div class="flex-column">
+            <button class="btn" (click)="showDiv()">Show Div</button>
+            <button class="btn" (click)="hideDiv()">Hide Div</button>
+            <button class="btn" (click)="toggleDiv()">Toggle Div</button>
+        </div>
+        
+        @if(display){
+            <div class="block m-0-5" style="background-color: blue; align-items: center; align-content: center;"></div>
+        }
+    </div>
+</section>
+
+<section>
+    <p>If Else on Div:</p>
+    <div class="d-flex">
+        <button class="btn" (click)="toggleDivColor()">{{toggle? "Show Red Color" : "Show Gold Color"}}</button>
+        
+        @if(toggle){
+            <div class="block" style="background-color: gold;"></div>
+        }
+        @else {
+            <div class="block" style="background-color: red;"></div>
+        }
+    </div>
+</section>
+
+<section>
+    <p>Else If On Div:</p>
+    <div>
+        <div>
+            <button (click)="setBlockColor($event)" class="btn">Red</button>
+            <button (click)="setBlockColor($event)" class="btn">Blue</button>
+            <button (click)="setBlockColor($event)" class="btn">Green</button>
+            <button (click)="setBlockColor($event)" class="btn">Orange</button>
+            <button (click)="setBlockColor($event)" class="btn">Black</button>
+        </div>
+        @if(blockColor == "red"){
+            <div class="block" style="background-color: red;"></div>
+        }
+        @else if(blockColor == "blue"){
+            <div class="block" style="background-color: blue;"></div>
+        }
+        @else if(blockColor == "green"){
+            <div class="block" style="background-color: green;"></div>
+        }
+        @else if(blockColor == "orange"){
+            <div class="block" style="background-color: orange;"></div>
+        }
+        @else(){
+            <div class="block" style="background-color: black;"></div>
+        }
+    </div>
+</section>
+
+<section>
+    <p>From Course Else If on Div:</p>
+    <div>
+        <button (click)="handleColor(1)" class="btn">Red</button>
+        <button (click)="handleColor(2)" class="btn">Blue</button>
+        <button (click)="handleColor(3)" class="btn">Green</button>
+        <button (click)="handleColor(4)" class="btn">Orange</button>
+        <button (click)="handleColor(0)" class="btn">Other</button>
+        <input type="number" (input)="handleInput($event)" placeholder="enter color number">
+    </div>
+    @if(color == 1){
+        <div class="block m-0-5" style="background-color: red;"></div>
+    }
+    @else if(color == 2){
+        <div class="block m-0-5" style="background-color: blue;"></div>
+    }
+    @else if(color == 3){
+        <div class="block m-0-5" style="background-color: green;"></div>
+    }
+    @else if(color == 4){
+        <div class="block m-0-5" style="background-color: orange;"></div>
+    }
+    @else(){
+        <div class="block m-0-5" style="background-color: black;"></div>
+    }
+</section>
