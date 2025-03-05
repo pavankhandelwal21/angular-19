@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { CountersComponent } from './counters/counters.component';
 import { InputValueComponent } from './input-value/input-value.component';
@@ -9,10 +8,11 @@ import { ForLoopComponent } from './for-loop/for-loop.component';
 import { SignalComponent } from './signal/signal.component';
 import { EffectComponent } from './effect/effect.component';
 import { ContextualVariableComponent } from './contextual-variable/contextual-variable.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, CountersComponent, InputValueComponent, IfElseControlFlowComponent, SwitchControlFlowComponent, ForLoopComponent, SignalComponent, EffectComponent, ContextualVariableComponent],
+  imports: [LoginComponent, CountersComponent, InputValueComponent, IfElseControlFlowComponent, SwitchControlFlowComponent, ForLoopComponent, SignalComponent, EffectComponent, ContextualVariableComponent, TwoWayBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

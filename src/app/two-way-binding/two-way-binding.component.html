@@ -1,0 +1,26 @@
+<div class="d-flex">
+    <section>
+        <h1>Single Way Binding</h1>
+        <p>Used Method instead of FormModule</p>
+        <p>Value: {{oneWayBinding}}</p>
+        <input type="text" (input)="updateOneWayValue($event)" placeholder="Enter Value">
+        
+        <h1>Two Way Binding</h1>
+        <p>Used FormModule</p>
+        <p>Value: {{twoWayBinding}}</p>
+        <input type="text" [(ngModel)]="twoWayBinding" placeholder="Enter Value">
+    </section>
+    <section>
+        <pre>
+            &lt;h1&gt;Single Way Binding&lt;/h1&gt;
+            &lt;p&gt;Used Method instead of FormModule&lt;/p&gt;
+            &lt;p&gt;Value: {{ oneWayBinding }}&lt;/p&gt;
+            &lt;input type="text" (input)="updateOneWayValue($event)" placeholder="Enter Value"&gt;
+    
+            &lt;h1&gt;Two Way Binding&lt;/h1&gt;
+            &lt;p&gt;Used FormModule&lt;/p&gt;
+            &lt;p&gt;Value: {{ twoWayBinding }}&lt;/p&gt;
+            &lt;input type="text" [(ngModel)]="twoWayBinding" placeholder="Enter Value"&gt;
+        </pre>
+    </section>
+</div>
