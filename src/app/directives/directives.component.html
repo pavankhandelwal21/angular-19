@@ -1,15 +1,29 @@
 <h1>Directives</h1>
 
-<h3 *ngIf="showValue">Show Value using *ngIf</h3>
+<h2>*ngIf</h2>
+<div *ngIf="showValue else elseBlock">
+    <h4>If Value in ngIf</h4>
+</div>
+<ng-template #elseBlock>
+    <h4>Else Value</h4>
+</ng-template>
+<button (click)="changeCondition()" class="btn">change condition</button>
 
-<h3>*ngFor for array</h3>
+<p *ngIf="count == 0">Heading 0</p>
+<p *ngIf="count == 1">Heading 1</p>
+<p *ngIf="count == 2">Heading 2</p>
+<p *ngIf="count == 3">Heading 3</p>
+<p *ngIf="count > 3">Thats It</p>
+<button (click)="changeCount()" class="btn">Change Count</button>
+
+<h2>*ngFor for array</h2>
 <ul>
     <li *ngFor="let student of students">
         {{student}}
     </li>
 </ul>
 
-<h3>*ngFor for array of objects</h3>
+<h2>*ngFor for array of objects</h2>
 <ul>
     <li *ngFor="let student of studentsData">
         <span>{{student.name}}</span>
@@ -23,3 +37,18 @@
         </ul>
     </li>
 </ul>
+
+<h2>*ngSwitch</h2>
+<button (click)="updateColor('red')" class="btn">Red</button>
+<button (click)="updateColor('blue')" class="btn">Blue</button>
+<button (click)="updateColor('green')" class="btn">Green</button>
+<button (click)="updateColor('pink')" class="btn">Pink</button>
+<button (click)="updateColor('violet')" class="btn">Violet</button>
+<div [ngSwitch]="color">
+    <h3 *ngSwitchCase="'red'" style="background-color: red;">Red Color</h3>
+    <h3 *ngSwitchCase="'blue'" style="background-color: blue;">Blue Color</h3>
+    <h3 *ngSwitchCase="'green'" style="background-color: green;">Green Color</h3>
+    <h3 *ngSwitchCase="'pink'" style="background-color: pink;">Pink Color</h3>
+    <h3 *ngSwitchCase="'violet'" style="background-color: blueviolet;">Violet Color</h3>
+    <h3 *ngSwitchDefault >No Color</h3>
+</div>
