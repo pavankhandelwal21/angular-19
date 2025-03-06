@@ -11,6 +11,7 @@ import { ContextualVariableComponent } from './contextual-variable/contextual-va
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { DynamicStylingComponent } from './dynamic-styling/dynamic-styling.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,8 @@ import { DynamicStylingComponent } from './dynamic-styling/dynamic-styling.compo
     ContextualVariableComponent,
     TwoWayBindingComponent,
     TodoListComponent,
-    DynamicStylingComponent
+    DynamicStylingComponent,
+    DirectivesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
