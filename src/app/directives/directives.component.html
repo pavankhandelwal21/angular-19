@@ -1,0 +1,25 @@
+<h1>Directives</h1>
+
+<h3 *ngIf="showValue">Show Value using *ngIf</h3>
+
+<h3>*ngFor for array</h3>
+<ul>
+    <li *ngFor="let student of students">
+        {{student}}
+    </li>
+</ul>
+
+<h3>*ngFor for array of objects</h3>
+<ul>
+    <li *ngFor="let student of studentsData">
+        <span>{{student.name}}</span>
+        <span>{{student.age}}</span>
+        <span>{{student.email}}</span>
+        <ul>
+            <li *ngFor="let obj of student.arr">
+                <span>{{obj.again}}</span>
+                <span>{{obj.value}}</span>
+            </li>
+        </ul>
+    </li>
+</ul>
