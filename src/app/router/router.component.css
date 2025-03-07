@@ -1,0 +1,30 @@
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    width: -webkit-fill-available;
+}
+li{
+    list-style-type: none;
+    border: 1px solid black;
+    text-align: center;
+    width: -webkit-fill-available;
+}
+.d-flex{
+    display: flex;
+}
+li a:hover{
+    background: linear-gradient(to bottom right, #008cff, #e100ff) !important;
+    color: white !important;
+    opacity: 90%;
+    transition: 1s;
+    background-position: right center; 
+}
+.active{
+    background: linear-gradient(to bottom right, #7d1ced, #bbad0f);
+    color: white;
+}
+.m-50{
+    margin: 50px;
+}
