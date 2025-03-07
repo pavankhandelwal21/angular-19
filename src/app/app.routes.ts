@@ -12,6 +12,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { InputValueComponent } from './input-value/input-value.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -27,5 +28,5 @@ export const routes: Routes = [
     { path: 'switchcontrolflow', component: SwitchControlFlowComponent },
     { path: 'todolist', component: TodoListComponent },
     { path: 'twowaybinding', component: TwoWayBindingComponent },
-
+    { path: '**', component: PageNotFoundComponent }
 ];
